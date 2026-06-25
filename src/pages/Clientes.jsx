@@ -9,7 +9,7 @@ function ClientRow({ client }) {
     <div>
       <div
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-6 py-4 cursor-pointer hover:bg-amber-50 transition-colors"
+        className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 py-4 cursor-pointer hover:bg-amber-50 transition-colors"
         style={{ borderBottom: '1px solid #D4C5A9', paddingLeft: 20, paddingRight: 20 }}
       >
         {/* Client number */}
@@ -28,7 +28,7 @@ function ClientRow({ client }) {
         </div>
 
         {/* Phone */}
-        <div style={{ fontFamily: "'Courier Prime', monospace", fontSize: 12, color: '#5C3D2E', width: 140, flexShrink: 0 }}>
+        <div  className='w-full md:w-[140px]' style={{ fontFamily: "'Courier Prime', monospace", fontSize: 12, color: '#5C3D2E', flexShrink: 0 }}>
           {client.phone}
         </div>
 
